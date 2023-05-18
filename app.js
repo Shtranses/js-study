@@ -1,5 +1,8 @@
+// 2 task
 // console.log("Shul");
 
+
+// 3 task
 // let one = 1;
 // let lett = "b";
 
@@ -10,7 +13,7 @@
 // console.log(lett);
 
 
-
+// 4 task
 // let user = {
 //     name: "Mr",
 //     age: 5,
@@ -22,7 +25,7 @@
 // console.log(user);
 
 
-
+// 5 task
 // const isAdult = confirm("Are you an adult?");
 
 // if (isAdult) {
@@ -30,7 +33,7 @@
 // }
 
 
-
+// 6 task
 // var firstName = "Yaroslav";
 // var lastName = "Shul";
 // var group = "team_ns";
@@ -46,7 +49,7 @@
 
 
 
-
+// 7 task
 // var log = prompt("login");
 // var mail = prompt("mail");
 // var pass = prompt("password");
@@ -54,7 +57,7 @@
 // confirm("Your login: " + log + " Your mail: " + mail + " Your password: " + pass);
 
 
-
+// 8 task
 var time = prompt("Enter min.");
 
 if (time) {
