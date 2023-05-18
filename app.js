@@ -52,3 +52,20 @@
 // var pass = prompt("password");
 
 // confirm("Your login: " + log + " Your mail: " + mail + " Your password: " + pass);
+
+
+
+var time = prompt("Enter min.");
+
+if (time) {
+    var secondsInMin = time * 60;
+    var secondsInHour = secondsInMin * 60;
+    var secondsInDay = secondsInHour * 24;
+    var secondsInMonth = secondsInDay * 30;
+    confirm("Кількість секунд в хвилині: " + secondsInMin);
+    confirm("Кількість секунд в годині: " + secondsInHour);
+    confirm("Кількість секунд в добі: " + secondsInDay);
+    confirm("Кількість секунд в місяці: " + secondsInMonth);
+}
+
+
