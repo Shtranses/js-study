@@ -199,3 +199,141 @@
 //   }
 // console.log(findUnique([1, 2, 3, 5, 3]));
 // console.log(findUnique([1, 2, 3, 5, 11]));
+
+
+// 3rd homework
+
+// 1 task
+
+// function compact(arr) {
+//     return [...new Set(arr)];
+//   }
+//   const arr = [5, 3, 4, 5, 6, 7, 3];
+//   const arr2 = compact(arr);
+//   console.log(arr2); // [5, 3, 4, 6, 7]
+
+// 2 task
+
+// function createArray(start, end) {
+//     const arr = [];
+//     for (let i = start; i <= end; i++) {
+//       arr.push(i);
+//     }
+//     return arr;
+//   }
+  
+//   let arr = createArray(2, 9);
+//   console.log(arr); 
+
+// 3 task
+
+// function printRange(a, b) {
+//     let count = 1;
+//     for (let i = a; i <= b; i++) {
+//       for (let j = 0; j < count; j++) {
+//         console.log(i);
+//       }
+//       count++;
+//     }
+//   }
+  
+//   printRange(3, 6);
+
+// 4 task
+
+// function randArray(k) {
+//     const arr = [];
+//     for (let i = 0; i < k; i++) {
+//       const randomNum = Math.floor(Math.random() * 500) + 1;
+//       arr.push(randomNum);
+//     }
+//     return arr;
+//   }
+  
+//   console.log(randArray(7));
+
+// 5 task
+
+// function funcName(arr) {
+//     const result = [];
+//     const numberArray = [];
+//     const stringArray = [];
+  
+//     for (let i = 0; i < arr.length; i++) {
+//       const currentElement = arr[i];
+  
+//       if (typeof currentElement === "number") {
+//         numberArray.push(currentElement);
+//       } else if (typeof currentElement === "string") {
+//         stringArray.push(currentElement);
+//       }
+//     }
+  
+//     result.push(numberArray);
+//     result.push(stringArray);
+  
+//     return result;
+//   }
+  
+//   let arr = [5, "Limit", 12, "a", "3", 99, 2, [2, 4, 3, "33", "a", "text"], "strong", "broun"];
+//   let arrNew = funcName(arr);
+//   console.log(arrNew);
+
+
+// 6 task
+
+
+// function calc(a, b, op) {
+//     let result;
+    
+//     if (op === 1) {
+//       result = a - b;
+//     } else if (op === 2) {
+//       result = a * b;
+//     } else if (op === 3) {
+//       result = a / b;
+//     } else {
+//       result = a + b;
+//     }
+
+//     return result;
+//   }
+
+// task 7
+
+// function findUnique(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//       for (let j = i + 1; j < arr.length; j++) {
+//         if (arr[i] === arr[j]) {
+//           return false; // Знайдено дублікат, повертаємо false
+//         }
+//       }
+//     }
+  
+//     return true; // Усі елементи унікальні, повертаємо true
+//   }
+// console.log(findUnique([1, 2, 3, 5, 3]));
+// console.log(findUnique([1, 2, 3, 5, 11]));
+
+
+// 8 task
+
+// const currentTime = new Date();
+// const currentHour = currentTime.getHours();
+// let greeting;
+
+// switch (true) {
+//   case currentHour >= 23 || currentHour < 5:
+//     greeting = "Доброї ночі";
+//     break;
+//   case currentHour >= 5 && currentHour < 11:
+//     greeting = "Доброго ранку";
+//     break;
+//   case currentHour >= 11 && currentHour < 17:
+//     greeting = "Добрий день";
+//     break;
+//   default:
+//     greeting = "Доброго вечора";
+// }
+
+// console.log(greeting);
