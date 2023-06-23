@@ -754,3 +754,74 @@
 //     main.appendChild(div);
 //     body.appendChild(main);
 //   });
+
+// task 4
+// document.addEventListener("DOMContentLoaded", function() {
+//     let btn = document.querySelector(".btn");
+//     let outBlock = document.querySelector(".out");
+
+//     btn.addEventListener("click", function(event) {
+//       event.preventDefault();
+
+//       let inputFields = document.querySelectorAll(".arr");
+//       let data = "";
+
+//       for (let i = 0; i < inputFields.length; i++) {
+//         let fieldName = inputFields[i].getAttribute("data-form");
+//         let fieldValue = inputFields[i].value;
+//         data += fieldName + ": " + fieldValue + "\n";
+//       }
+
+//       outBlock.textContent = data;
+//     });
+//   });
+
+// task 5
+// document.addEventListener("DOMContentLoaded", function() {
+//     let circles = document.querySelectorAll(".circle");
+
+//     circles.forEach(function(circle) {
+//       let animClass = circle.getAttribute("data-anim");
+//       circle.classList.add(animClass);
+//     });
+
+//     // Перевірка застосованих анімацій
+//     let appliedAnimations = [];
+//     circles.forEach(function(circle) {
+//       let classList = circle.classList;
+//       let animClass = circle.getAttribute("data-anim");
+//       if (classList.contains(animClass)) {
+//         appliedAnimations.push(animClass);
+//       }
+//     });
+
+//     console.log("Застосовані анімації:", appliedAnimations);
+//   });
+
+
+// task 6
+// const gradients = document.querySelectorAll('.gradient');
+// const colorSpans = document.querySelectorAll('.color');
+
+// function updatePrice(newPrice) {
+//   const priceElement = document.getElementById('outprice');
+//   priceElement.textContent = newPrice.toFixed(2);
+// }
+
+// function handleColorClick(event) {
+//   const price = parseFloat(event.target.dataset.price);
+  
+//   updatePrice(price);
+
+//   colorSpans.forEach(span => {
+//     span.classList.remove('active');
+//   });
+  
+//   event.target.classList.add('active');
+// }
+
+// gradients.forEach(gradient => {
+//   gradient.addEventListener('click', handleColorClick);
+// });
+
+// updatePrice(189.99);
