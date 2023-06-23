@@ -34,37 +34,37 @@
 
 
 // 6 task
-// var firstName = "Yaroslav";
-// var lastName = "Shul";
-// var group = "team_ns";
-// var yearOfBirth = 2003;
+// let firstName = "Yaroslav";
+// let lastName = "Shul";
+// let group = "team_ns";
+// let yearOfBirth = 2003;
 
-// var study = true;
+// let study = true;
 
-// var variable = null;
-// var myVariable = undefined;
+// let letiable = null;
+// let myletiable = undefined;
 
 // console.log(typeof yearOfBirth, typeof study, typeof firstName);
-// console.log(typeof variable, typeof myVariable);
+// console.log(typeof letiable, typeof myletiable);
 
 
 
 // 7 task
-// var log = prompt("login");
-// var mail = prompt("mail");
-// var pass = prompt("password");
+// let log = prompt("login");
+// let mail = prompt("mail");
+// let pass = prompt("password");
 
 // confirm("Your login: " + log + " Your mail: " + mail + " Your password: " + pass);
 
 
 // 8 task
-// var time = prompt("Enter min.");
+// let time = prompt("Enter min.");
 
 // if (time) {
-//     var secondsInMin = time * 60;
-//     var secondsInHour = secondsInMin * 60;
-//     var secondsInDay = secondsInHour * 24;
-//     var secondsInMonth = secondsInDay * 30;
+//     let secondsInMin = time * 60;
+//     let secondsInHour = secondsInMin * 60;
+//     let secondsInDay = secondsInHour * 24;
+//     let secondsInMonth = secondsInDay * 30;
 //     confirm("Кількість секунд в хвилині: " + secondsInMin);
 //     confirm("Кількість секунд в годині: " + secondsInHour);
 //     confirm("Кількість секунд в добі: " + secondsInDay);
@@ -692,4 +692,65 @@
 //   console.log('\nSorted salary:');
 //   workers.sort((a, b) => a.showExp - b.showExp).forEach(worker => {
 //     worker.showSalary();
+//   });
+
+
+// 5th homework
+
+// task 1
+
+// function showModalContent() {
+//     let listItems = document.querySelectorAll("#list li");
+//     let firstItem = listItems[0].innerText;
+//     let lastItem = listItems[listItems.length - 1].innerText;
+//     let secondItem = listItems[1].innerText;
+//     let fourthItem = listItems[3].innerText;
+//     let thirdItem = listItems[2].innerText;
+
+//     let modalContent = firstItem + ", " + lastItem + ", " + secondItem + ", " + fourthItem + ", " + thirdItem;
+//     alert(modalContent);
+//   }
+
+// task 2
+// document.addEventListener("DOMContentLoaded", function() {
+//     // Зміна стилів елементів за допомогою DOM
+//     let h1Element = document.querySelector("h1");
+//     h1Element.style.fontSize = "24px";
+//     h1Element.style.color = "blue";
+//     h1Element.style.textDecoration = "underline";
+
+//     let myDiv = document.querySelector("#myDiv");
+//     myDiv.style.backgroundColor = "lightgray";
+//     myDiv.style.padding = "10px";
+
+//     let paragraphs = document.querySelectorAll("#myDiv p");
+//     for (let i = 0; i < paragraphs.length; i++) {
+//       paragraphs[i].style.margin = "5px 0";
+//     }
+
+//     let myList = document.querySelector("#myList");
+//     myList.style.display = "flex";
+//     myList.style.listStyleType = "none";
+//     myList.style.justifyContent = "space-between";
+
+//     let spanElement = document.querySelector("span");
+//     spanElement.style.display = "none";
+//   });
+
+//task 3
+// document.addEventListener("DOMContentLoaded", function() {
+//     let body = document.querySelector("body");
+
+//     let main = document.createElement("main");
+//     main.setAttribute("class", "mainClass check item");
+
+//     let div = document.createElement("div");
+//     div.setAttribute("id", "myDiv");
+
+//     let paragraph = document.createElement("p");
+//     paragraph.textContent = "First paragraph";
+
+//     div.appendChild(paragraph);
+//     main.appendChild(div);
+//     body.appendChild(main);
 //   });
