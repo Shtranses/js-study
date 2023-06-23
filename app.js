@@ -483,3 +483,213 @@
 //   const users = showUsers([4, 13, 1432, -1]);
 //   console.log(users);
   
+
+
+
+// 5th homework
+
+
+// task 1
+// class Circle {
+//     constructor(centerX, centerY, radius) {
+//       this.centerX = centerX;
+//       this.centerY = centerY;
+//       this.radius = radius;
+//     }
+  
+//     circumference() {
+//       return 2 * Math.PI * this.radius;
+//     }
+  
+//     static circumferenceFromRadius(radius) {
+//       return 2 * Math.PI * radius;
+//     }
+  
+//     getCircle() {
+//       return new Circle(this.centerX, this.centerY, this.radius);
+//     }
+  
+//     static creatCircle(centerX, centerY, radius) {
+//       return new Circle(centerX, centerY, radius);
+//     }
+  
+//     pointInside(x, y) {
+//       const distance = Math.sqrt( (x - this.centerX) ** 2 + (y - this.centerY) ** 2);
+//       return distance <= this.radius;
+//     }
+  
+//     toString() {
+//       return `Circle with center (${this.centerX}, ${this.centerY}) and radius ${this.radius}`;
+//     }
+//   }
+//   // Створення об'єкта круга
+// const circle = new Circle(0, 0, 7);
+
+// // Отримання довжини кола
+// const circumference = circle.circumference();
+// console.log("Circumference:", circumference);
+
+// // Виклик статичного методу
+// const circumferenceFromRadius = Circle.circumferenceFromRadius(7);
+// console.log("Circumference from radius:", circumferenceFromRadius);
+
+// // копії об'єкта круга
+// const circleCopy = circle.getCircle();
+// console.log("Circle copy:", circleCopy);
+
+// // Створення об'єкта круга за параметрами
+// const newCircle = Circle.creatCircle(3, 3, 4);
+// console.log("New circle:", newCircle);
+
+// const pointInside = circle.pointInside(3, 4);
+// console.log("Point inside circle:", pointInside);
+
+// // Перетворення об'єкта круга в рядок
+// const circleString = circle.toString();
+// console.log("Circle as string:", circleString);
+
+
+// task 2
+// function propsCount(currentObject) {
+//     return Object.keys(currentObject).length;
+//   }
+  
+//   let student = {
+//     course: "Js fundamental",
+//     duration: 3,
+//     direction: "web-development",
+//     age: 20,
+//     pets: "dont have"
+//   };
+  
+//   console.log(propsCount(student)); 
+
+
+// task 3
+// class person {
+//     constructor(name, surname) {
+//       this.name = name;
+//       this.surname = surname;
+//     }
+  
+//     showFullName() {
+//       console.log(this.name + ' ' + this.surname);
+//     }
+//   }
+  
+//   class Student extends person {
+//     constructor(name, surname, year) {
+//       super(name, surname);
+//       this.year = year;
+//     }
+  
+//     showFullName(middleName) {
+//       console.log(this.name + ' ' + this.surname + ' ' + middleName);
+//     }
+  
+//     showCourse() {
+//       let currentYear = new Date().getFullYear();
+//       let course = currentYear - this.year + 1;
+//       console.log('Current course: ' + course);
+//     }
+//   }
+  
+//   let student = new Student('Fillip', 'Bon', 2022);
+//   student.showFullName('Smith'); 
+//   student.showCourse();
+
+// task 4
+// class Marker {
+//     constructor(color, ink) {
+//       this.color = color;
+//       this.ink = ink;
+//     }
+  
+//     print(text) {
+//       let inkNeeded = text.replace(/\s/g, '').length * 0.5;
+//       if (inkNeeded <= this.ink) {
+//         this.ink -= inkNeeded;
+//         console.log('%c' + text, 'color: ' + this.color);
+//       } else {
+//         console.log('Недостатньо чорнила для друку тексту.');
+//       }
+//     }
+//   }
+  
+//   class RefillableMarker extends Marker {
+//     refill(inkAmount) {
+//       this.ink += inkAmount;
+//       console.log('Маркер заправлений. Поточний рівень чорнила: ' + this.ink + '%');
+//     }
+//   }
+  
+//   let marker = new Marker('blue', 50);
+//   marker.print('Hello, world!');
+//   marker.print('Клієнт дуже задоволений.');
+  
+//   let refillableMarker = new RefillableMarker('red', 20);
+//   refillableMarker.print('Це багаторазовий маркер.');
+//   refillableMarker.refill(50);
+//   refillableMarker.print('ц.');
+
+
+// task 5
+// class Worker {
+//     constructor(fullName, dayRate, workingDays) {
+//       this.fullName = fullName;
+//       this.dayRate = dayRate;
+//       this.workingDays = workingDays;
+//       this._experience = 1;
+//     }
+  
+//     showSalary() {
+//       let salary = this.dayRate * this.workingDays;
+//       console.log(this.fullName + ' salary: ' + salary);
+//     }
+  
+//     showSalaryWithExperience() {
+//       let salary = this.dayRate * this.workingDays * this._experience;
+//       console.log(this.fullName + ' salary: ' + salary);
+//     }
+  
+//     get showExp() {
+//       return this._experience;
+//     }
+  
+//     set setExp(value) {
+//       this._experience = value;
+//     }
+//   }
+  
+//   let worker1 = new Worker('Pedro Smith', 53, 54);
+//   console.log(worker1.fullName);
+//   worker1.showSalary();
+//   console.log('New experience: ' + worker1.showExp);
+//   worker1.showSalaryWithExperience();
+//   worker1.setExp = 1.5;
+//   console.log('New experience: ' + worker1.showExp);
+//   worker1.showSalaryWithExperience();
+  
+//   let worker2 = new Worker('Vilson Willi', 43, 56);
+//   console.log(worker2.fullName);
+//   worker2.showSalary();
+//   console.log('New experience: ' + worker2.showExp);
+//   worker2.showSalaryWithExperience();
+//   worker2.setExp = 1.5;
+//   console.log('New experience: ' + worker2.showExp);
+//   worker2.showSalaryWithExperience();
+  
+//   let worker3 = new Worker('Boba Fet', 23, 56);
+//   console.log(worker3.fullName);
+//   worker3.showSalary();
+//   console.log('New experience: ' + worker3.showExp);
+//   worker3.showSalaryWithExperience();
+//   worker3.setExp = 1.5;
+//   console.log('New experience: ' + worker3.showExp);
+//   worker3.showSalaryWithExperience();
+  
+//   let workers = [worker1, worker2, worker3];
+//   console.log('\nSorted salary:');
+//   workers.sort((a, b) => a.showExp - b.showExp).forEach(worker => {
+//     worker.showSalary();
+//   });
