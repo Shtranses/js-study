@@ -695,7 +695,7 @@
 //   });
 
 
-// 5th homework
+// 6th homework
 
 // task 1
 
@@ -825,3 +825,83 @@
 // });
 
 // updatePrice(189.99);
+
+
+
+// 7th homework
+
+// task 1
+// let myWindow = window.open('', '', 'width=300,height=300');
+
+// setTimeout(function() {
+//   myWindow.resizeTo(500, 500);
+// }, 2000);
+
+// setTimeout(function() {
+//   myWindow.moveTo(200, 200);
+// }, 4000);
+
+// setTimeout(function() {
+//   myWindow.close();
+// }, 6000);
+
+// task 2
+// function changeCSS() {
+//     let textElement = document.getElementById("text");
+//     textElement.style.color = "orange";
+//     textElement.style.fontSize = "20px";
+//     textElement.style.fontFamily = "Comic Sans MS";
+//   }
+
+
+// task 3
+// document.getElementById("button1").addEventListener("click", function() {
+//     document.querySelector(".container").style.backgroundColor = "blue";
+//   });
+  
+//   document.getElementById("button2").addEventListener("dblclick", function() {
+//     document.querySelector(".container").style.backgroundColor = "pink";
+//   });
+
+//   document.getElementById("button3").addEventListener("mousedown", function() {
+//     document.querySelector(".container").style.backgroundColor = "brown";
+//   });
+  
+//   document.getElementById("button3").addEventListener("mouseup", function() {
+//     document.querySelector(".container").style.backgroundColor = "white";
+//   });
+
+//   document.getElementById("link").addEventListener("mouseover", function() {
+//     document.querySelector(".container").style.backgroundColor = "yellow";
+//   });
+  
+//   document.getElementById("link").addEventListener("mouseout", function() {
+//     document.querySelector(".container").style.backgroundColor = "white";
+//   });
+
+
+// task 4
+// document.getElementById("deleteButton").addEventListener("click", function() {
+//     let dropdown = document.getElementById("dropdown");
+//     let selectedIndex = dropdown.selectedIndex;
+  
+//     if (selectedIndex !== -1) {
+//       dropdown.remove(selectedIndex);
+//     }
+//   });
+
+// task 5
+// let button = document.getElementById("myButton");
+// let message = document.getElementById("message");
+
+// button.addEventListener("click", function() {
+//   message.textContent = "I was pressed!";
+// });
+
+// button.addEventListener("mouseover", function() {
+//   message.textContent = "Mouse on me!";
+// });
+
+// button.addEventListener("mouseout", function() {
+//   message.textContent = "Mouse is not on me!";
+// });
