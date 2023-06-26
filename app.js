@@ -905,3 +905,83 @@
 // button.addEventListener("mouseout", function() {
 //   message.textContent = "Mouse is not on me!";
 // });
+
+
+
+// 8th homework
+
+// task 1
+// function upperCase(str) {
+//     if (str.charAt(0) === str.charAt(0).toUpperCase()) {
+//       return "Рядок починається з верхнього регістру";
+//     } else {
+//       return "Рядок не починається з верхнього регістру";
+//     }
+//   }
+  
+//   console.log(upperCase('Привіт')); 
+//   console.log(upperCase('привіт')); 
+
+
+// task 2
+// function checkEmail(email) {
+//     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//     return emailRegex.test(email);
+//   }
+  
+//   console.log(checkEmail("somemail@gmail.com"));
+
+// task 3
+// function swapSubstrings(input, substringFirst, substringSecond) {
+//     const regex = new RegExp(`(${substringFirst})(.*)(\\s)(${substringSecond})`);
+//     const result = input.replace(regex, `$4, $2$3$1`);
+//     return result;
+//   }
+  
+//   const inputString = "Java Script";
+//   const outputString = swapSubstrings(inputString, "Java", "Script");
+//   console.log(outputString);
+
+// task 4
+// function validateCreditCardNumber(cardNumber) {
+//     const regex = /^\d{4}-\d{4}-\d{4}-\d{4}$/;
+//     return regex.test(cardNumber);
+//   }
+  
+//   console.log(validateCreditCardNumber('2421-1244-7432-u8656'));
+//   console.log(validateCreditCardNumber('9999-9999-9999-9999'));
+
+// task 5
+// function checkEmail(email) {
+//     const regex = /^[a-zA-Z0-9]+([_\-.][a-zA-Z0-9]+)*@[a-zA-Z0-9]+([_\-.][a-zA-Z0-9]+)*\.[a-zA-Z]{2,}$/;
+//     if (regex.test(email)) {
+//       return "Пошта вірна!";
+//     } else {
+//       return "Пошта не є вірною!";
+//     }
+//   }
+  
+//   console.log(checkEmail('some_mail@gmail.com'));
+//   console.log(checkEmail('whatTheMail@gmail.com'));
+//   console.log(checkEmail('mailsicorrect&=?@gmail.com'))
+
+
+// task 6
+// function checkLogin(login) {
+//     const regex = /^[a-zA-Z][a-zA-Z0-9]{1,9}$/;
+//     const numbers = login.match(/\d+(\.\d+)?/g);
+    
+//     if (regex.test(login)) {
+//       if (numbers) {
+//         return [true, numbers];w
+//       } else {
+//         return [true, []];
+//       }
+//     } else {
+//       return false;
+//     }
+//   }
+  
+//   console.log(checkLogin('w')); 
+//   console.log(checkLogin('sfesvrw1312v')); 
+//   console.log(checkLogin('correct')); 
