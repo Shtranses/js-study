@@ -985,3 +985,47 @@
 //   console.log(checkLogin('w')); 
 //   console.log(checkLogin('sfesvrw1312v')); 
 //   console.log(checkLogin('correct')); 
+
+// 9th homework
+
+// task 1
+// $(document).ready(function() {
+//     $('h2.head').css('background-color', 'green');
+//     $('h2.head .inner').css('font-size', '35px');
+//   });
+
+// task 2
+// $(document).ready(function() {
+//     $('a[href^="https://"]').attr('target', '_blank');
+//   });
+
+// task 3
+// $(document).ready(function() {
+//     $('h3 + div').each(function() {
+//       $(this).insertBefore($(this).prev('h3'));
+//     });
+//   });
+
+// task 4
+// window.addEventListener('DOMContentLoaded', (event) => {
+//     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+//     let checkedCount = 0;
+
+//     checkboxes.forEach((checkbox) => {
+//       checkbox.addEventListener('change', () => {
+//         if (checkbox.checked) {
+//           checkedCount++;
+//           if (checkedCount === 3) {
+//             checkboxes.forEach((cb) => {
+//               cb.disabled = true;
+//             });
+//           }
+//         } else {
+//           checkedCount--;
+//           checkboxes.forEach((cb) => {
+//             cb.disabled = false;
+//           });
+//         }
+//       });
+//     });
+//   });
